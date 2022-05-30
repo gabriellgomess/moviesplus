@@ -78,7 +78,7 @@ const Details = (props) => {
                     <p>{details.Year}</p>
                 </div>
                 <div>
-                    <label>Imdb Rating</label>
+                    <label>IMDB Rating</label>
                     <p>{details.imdbRating}</p>
                 </div>
             </div>
