@@ -1,0 +1,21 @@
+
+.header{
+    width: 100%;
+    height: 20vh;
+    background: #262526;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    border-radius: 0 0 20px 20px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.title{
+    color: #fff;
+    font-family: 'WickedGrit';
+    font-size: 60px;
+    color: #6B7BA6;
+    margin: 0;
+}

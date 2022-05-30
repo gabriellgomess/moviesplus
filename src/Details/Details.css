@@ -1,0 +1,32 @@
+.container-details{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 249, 249, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+  
+}
+
+.card-details{
+    padding: 30px;
+    position: fixed;
+    margin-top: 100px;
+    height: 700px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 14px #6e6e6e,
+                -5px -5px 14px #b1b0b0;
+}
