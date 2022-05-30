@@ -10,6 +10,11 @@
   src: local('WickedGrit'), url(./fonts/wicked_grit/WickedGrit.ttf) format('truetype');
  
 }
+@font-face {
+  font-family: 'Golden_Ranger';
+  src: local('Golden_Ranger'), url(./fonts/wicked_grit/Golden_Ranger.ttf) format('truetype');
+ 
+}
 body{
   height: 100%;
   background: #E5E8F1;

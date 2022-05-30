@@ -55,7 +55,7 @@ const Main = () => {
         }
     }
     const HandleMore = (e) => {
-        setShow(e.target.value)    } 
+        setShow(e)    } 
     
     return(
         <>
@@ -82,8 +82,9 @@ const Main = () => {
                                 <div className="text-movie">
                                     <h4>{filmes.Title}</h4>
                                     <p>{filmes.Year}</p>   
-                                </div>                                                           
-                                <button value={filmes.Title} onClick={(e)=>{HandleMore(e)}}>Saiba Mais</button>
+                                </div>
+                                <div className="btn-more-info" onClick={()=>{HandleMore(filmes.Title)}}>Saiba Mais</div>                                                          
+                                
                                 {show === filmes.Title ? <Details id={filmes.Title}/>:null}                            
                             </div>
                         </MyContext.Provider>

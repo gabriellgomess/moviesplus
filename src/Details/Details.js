@@ -2,6 +2,8 @@ import  {React,  useEffect, useState, useContext } from "react";
 import "./Details.css";
 import api_all from "../Services/api_all";
 import MyContext from "../contexts/myContext";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 
 const Details = (props) => {
@@ -36,17 +38,50 @@ const Details = (props) => {
     return(
     <div className="container-details">        
         <div className="card-details">
-            <button onClick={()=>{HandleClose()}}>Close</button>     
-            <h4>{details.Title}</h4>
-            <p>Country: {details.Country}</p>
-            <p>Actors: {details.Actors}</p>
-            <p>Genre: {details.Genre}</p>
-            <p>Language: {details.Language}</p>
-            <p>Plot: {details.Plot}</p>
-            <p>Duration: {details.Runtime}</p>
-            <p>Type: {details.Type}</p>
-            <p>Year: {details.Year}</p>
-            <p>Imdb Rating: {details.imdbRating}</p>
+            <div className="close">
+                <div className="rounded-close" onClick={HandleClose} >
+                   <FontAwesomeIcon icon={faClose}className="close-details" />  
+                </div>                
+            </div>
+            <div className="poster">
+                <img src={details.Poster} alt="" />
+                <div>
+                    <h3>{details.Title}</h3>
+                </div>                
+            </div>
+            <label>Plot</label>
+                <p>{details.Plot}</p>
+                                  
+            <label>Country</label>
+                <p>{details.Country}</p>
+            
+            <label>Actors</label>
+                <p>{details.Actors}</p>
+            
+            <label>Genre</label>
+                <p>{details.Genre}</p>
+            
+            <label>Language</label>
+               <p>{details.Language}</p>
+            
+            <div className="details-items">
+                <div>
+                    <label>Duration</label>
+                    <p>{details.Runtime}</p>
+                </div>
+                <div>
+                    <label>Type</label>
+                    <p>{details.Type}</p>
+                </div>
+                <div>
+                    <label>Year</label>
+                    <p>{details.Year}</p>
+                </div>
+                <div>
+                    <label>Imdb Rating</label>
+                    <p>{details.imdbRating}</p>
+                </div>
+            </div>
         </div>
     </div>
         

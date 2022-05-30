@@ -8,14 +8,21 @@
 	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
     border-radius: 0 0 20px 20px;    
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 
 }
 .title{
-    color: #fff;
     font-family: 'WickedGrit';
     font-size: 60px;
     color: #6B7BA6;
+    margin: 0;
+    width: 300px;
+    text-align: center;
+}
+.by{
+    color: #E5E8F1;
+    font-family: 'Golden_Ranger';
     margin: 0;
 }
