@@ -8,9 +8,8 @@ import { faClose } from '@fortawesome/free-solid-svg-icons';
 
 const Details = (props) => {
 
-    const[searchDetails, setSearchDetails] = useState("");
+    
     const[details, setDetails] = useState([]);
-    const[loading, setLoading] = useState(false);
     const{show, setShow} = useContext(MyContext);
 
     useEffect(() => {

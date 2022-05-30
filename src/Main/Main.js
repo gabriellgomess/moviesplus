@@ -1,7 +1,6 @@
-import {React, useState, useEffect, useContext} from "react";
+import {React, useState, useEffect} from "react";
 import "./Main.css";
 import api from "../Services/api";
-import api_all from "../Services/api_all";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBan, faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import Details from "../Details/Details";
@@ -10,14 +9,10 @@ import MyContext from "../contexts/myContext";
 const Main = () => {
     const [movies, setMovies] = useState([]);
     const [search, setSearch] = useState("");
-    const [searchAll, setSearchAll] = useState("");
-    const [searchFull, setSearchFull] = useState([]);
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
 
     const[show, setShow] = useState();
-    // const [loading, setLoading] = useState(false);
-    // const [error, setError] = useState(false);
     
     useEffect(() => {        
         async function loadMovies() {
