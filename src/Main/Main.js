@@ -66,6 +66,12 @@ const Main = () => {
                     return(
                         <MyContext.Provider value={{show, setShow}} key={Math.random()*10+filmes.imdbID}>
                             <div className="card-movie">
+                                <div className="wrapper-tag">
+                                    <div className="type-tag">
+                                        {filmes.Type}
+                                    </div>
+
+                                </div>
                                 <div className="img-movie">
                                     {filmes.Poster === "N/A"?
                                     <div className="container-img-notFound">
