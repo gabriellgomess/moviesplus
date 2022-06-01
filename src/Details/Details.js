@@ -48,39 +48,42 @@ const Details = (props) => {
                     <h3>{details.Title}</h3>
                 </div>                
             </div>
-            <label>Plot</label>
-                <p>{details.Plot}</p>
-                                  
-            <label>Country</label>
-                <p>{details.Country}</p>
-            
-            <label>Actors</label>
-                <p>{details.Actors}</p>
-            
-            <label>Genre</label>
-                <p>{details.Genre}</p>
-            
-            <label>Language</label>
-               <p>{details.Language}</p>
-            
-            <div className="details-items">
-                <div>
-                    <label>Duration</label>
-                    <p>{details.Runtime}</p>
-                </div>
-                <div>
-                    <label>Type</label>
-                    <p>{details.Type}</p>
-                </div>
-                <div>
-                    <label>Year</label>
-                    <p>{details.Year}</p>
-                </div>
-                <div>
-                    <label>IMDB Rating</label>
-                    <p>{details.imdbRating}</p>
+            <div className="text-card-details">
+                <label>Plot</label>
+                    <p>{details.Plot}</p>
+                                    
+                <label>Country</label>
+                    <p>{details.Country}</p>
+                
+                <label>Actors</label>
+                    <p>{details.Actors}</p>
+                
+                <label>Genre</label>
+                    <p>{details.Genre}</p>
+                
+                <label>Language</label>
+                <p>{details.Language}</p>
+                
+                <div className="details-items">
+                    <div>
+                        <label>Duration</label>
+                        <p>{details.Runtime}</p>
+                    </div>
+                    <div>
+                        <label>Type</label>
+                        <p>{details.Type}</p>
+                    </div>
+                    <div>
+                        <label>Year</label>
+                        <p>{details.Year}</p>
+                    </div>
+                    <div>
+                        <label>IMDB Rating</label>
+                        <p>{details.imdbRating}</p>
+                    </div>
                 </div>
             </div>
+            
         </div>
     </div>
         

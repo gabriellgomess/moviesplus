@@ -76,3 +76,33 @@ label{
     font-weight: bold;
 }
 
+@media screen and (max-width: 590px){
+    .poster{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .poster>div{    
+        margin: 10px 0 0 0
+    }
+    .card-details{
+        margin-top: 35px;
+        max-height: 80%;        
+    }
+    .card-details > p{
+        font-size: 12px;
+    }
+    .text-card-details{
+        overflow: auto;
+    }
+    .details-items{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+    .details-items>div{
+        text-align: left;
+    }
+}
+

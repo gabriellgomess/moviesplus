@@ -64,8 +64,8 @@ const Main = () => {
             <div className="container-filmes">
                 {movies?.map(filmes=>{
                     return(
-                        <MyContext.Provider value={{show, setShow}}>
-                            <div className="card-movie" key={Math.random()*10}>
+                        <MyContext.Provider value={{show, setShow}} key={Math.random()*10+filmes.imdbID}>
+                            <div className="card-movie">
                                 <div className="img-movie">
                                     {filmes.Poster === "N/A"?
                                     <div className="container-img-notFound">
@@ -78,7 +78,9 @@ const Main = () => {
                                     <h4>{filmes.Title}</h4>
                                     <p>{filmes.Year}</p>   
                                 </div>
-                                <div className="btn-more-info" onClick={()=>{HandleMore(filmes.Title)}}>Saiba Mais</div>                                                          
+                                <div className="container-btn-more-info">
+                                    <div className="btn-more-info" onClick={()=>{HandleMore(filmes.Title)}}>Saiba Mais</div> 
+                                </div>                                                                                         
                                 
                                 {show === filmes.Title ? <Details id={filmes.Title}/>:null}                            
                             </div>
