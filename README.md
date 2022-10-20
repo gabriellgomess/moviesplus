@@ -7,6 +7,10 @@ Página de busca de filmes por título no Imdb, retornando detalhes sobre aquela
 
 - https://www.omdbapi.com/
 
+## Demostração
+
+- [Movie Plus](- [@gabriellgomess](https://github.com/gabriellgomess/))
+
 ## Autores
 
 - [@gabriellgomess](https://github.com/gabriellgomess/)
