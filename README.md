@@ -9,7 +9,7 @@ Página de busca de filmes por título no Imdb, retornando detalhes sobre aquela
 
 ## Demostração
 
-- [Movie Plus](- [@gabriellgomess](https://github.com/gabriellgomess/))
+- [Movie Plus](https://github.com/gabriellgomess/)
 
 ## Autores
 
